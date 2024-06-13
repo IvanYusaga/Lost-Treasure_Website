@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('/image/option.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.materi button {
+    position: absolute;
+    z-index: 1;
+    background-color: #EABC86;
+    top: 10vh;
+    left: 37vw;
+    width: 33vw;
+    height: 30vh;
+    border-radius: 20px;
+    font-size: 6vw;
+    font-family: fantasy;
+    color: #563107;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.soal button{
+    position: absolute;
+    z-index: 2;
+    background-color: #EABC86;
+    top: 50vh;
+    left: 37vw;
+    width: 33vw;
+    height: 30vh;
+    border-radius: 20px;
+    font-size: 6vw;
+    font-family: fantasy;
+    color: #563107;
+    border-color: transparent;
+    cursor: pointer;
+}

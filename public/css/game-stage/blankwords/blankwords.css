@@ -1,0 +1,155 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('/image/Ingame.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .soal-text {
+            position: absolute;
+            top: 10%;
+            left: 32%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            max-width: 44%;
+            text-align: justify;
+        }
+        .drop-area {
+            display: inline-block;
+            min-width: 100px;
+            border-bottom: 2px dashed #000;
+            margin: 0 5px;
+            vertical-align: middle;
+            min-height: 30px;
+        }
+        .text-answer {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: justify;
+            cursor: grab;
+            display: inline-block;
+        }
+        .text-answer1 {
+            position: absolute;
+            top: 14vh;
+            left: 73vw;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            cursor: grab;
+        }
+        .text-answer2 {
+            position: absolute;
+            top: 33vh;
+            right: 7vw;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            cursor: grab;
+        }
+        .text-answer3 {
+            position: absolute;
+            top: 54vh;
+            right: 15vw;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            cursor: grab;
+        }
+        .text-answer4 {
+            position: absolute;
+            top: 73vh;
+            right: 5vw;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            cursor: grab;
+        }
+        /* #result {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        } */
+    .custom-alert {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .custom-alert.success {
+        border-color: green;
+        color: green;
+    }
+
+    .custom-alert.error {
+        border-color: red;
+        color: red;
+    }
+
+    .custom-alert button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #ccc;
+        border: none;
+        cursor: pointer;
+    }
+
+    .custom-alert button:hover {
+        background-color: #bbb;
+    }
+
+    .custom-alert-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .back-button{
+        top: 80%;
+        left: 3%;
+        padding: 9px;
+        position: absolute;
+        border: solid burlywood;
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+        background-color: rgb(206, 134, 63);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+    .back-button img{
+        width: 100%;
+        height: 100%;
+    }
+    .back-button:hover{
+        transform: scale(1.1); /* Membesarkan tombol sedikit */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+        background-color: rgb(186, 114, 43);
+    }

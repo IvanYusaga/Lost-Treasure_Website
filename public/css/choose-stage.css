@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('/image/game-stage/bg-gamestage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.stage1 {
+    position: absolute;
+    z-index: 1;
+    top: 55vh;
+    left: 18vw;
+}
+
+.stage1 img{
+    width: 20vw;
+    height: auto;
+}
+
+.stage2 {
+    position: absolute;
+    z-index: 2;
+    top: 11vh;
+    left: 42vw;
+}
+
+.stage2 img{
+    width: 21vw;
+    height: auto;
+}
+
+.stage3 {
+    position: absolute;
+    z-index: 3;
+    top: 54vh;
+    left: 67vw;
+}
+
+.stage3 img{
+    width: 21vw;
+    height: auto;
+}
+
+.button-back {
+    position: absolute;
+    z-index: 4;
+    top: 80vh;
+    left: 4vw;
+}
+
+.button-back img{
+    width: 6vw;
+}
+
+/* element */
+
+/* water */
+
+.element .water1{
+    position: absolute;
+    z-index: 5;
+    left: 43vw;
+    top: 55vh;
+}
+
+.element .water1 img{
+    width: 20vw;
+}
+
+.element .water2{
+    position: absolute;
+    z-index: 5;
+    left: 10vw;
+    top: 12vh;
+}
+
+.element .water2 img{
+    width: 20vw;
+}
+
+.element .water3{
+    position: absolute;
+    z-index: 5;
+    left: 71vw;
+    top: 12vh;
+}
+
+.element .water3 img{
+    width: 20vw;
+}
+
+/* bird */
+
+.element .bird1{
+    position: absolute;
+    z-index: 5;
+    left: 50vw;
+    top: 35vh;
+}
+
+.element .bird1 img{
+    width: 20vw;
+}
+
+.element .bird2{
+    position: absolute;
+    z-index: 5;
+    left: 30vw;
+    top: 5vh;
+}
+
+.element .bird2 img{
+    width: 20vw;
+}
