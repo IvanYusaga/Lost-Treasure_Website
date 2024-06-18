@@ -4,14 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\TensesController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\ScrambleController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\ListeningController;
 use App\Http\Controllers\Scramble1Controller;
 use App\Http\Controllers\Scramble2Controller;
 use App\Http\Controllers\Scramble3Controller;
 use App\Http\Controllers\AfterLoginController;
-use App\Http\Controllers\BlankWordsController;
 use App\Http\Controllers\Listening1Controller;
 use App\Http\Controllers\Listening2Controller;
 use App\Http\Controllers\Listening3Controller;
@@ -26,7 +23,6 @@ use App\Http\Controllers\ChooseLevel2Controller;
 use App\Http\Controllers\ChooseLevel3Controller;
 use App\Http\Controllers\ChooseMateriController;
 use App\Http\Controllers\PassiveVoiceController;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
     return view('home');
