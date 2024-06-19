@@ -17,7 +17,27 @@ var modalText = document.getElementById("modalText");
 
 let correctWord, timer;
 let score = 0;
+let words = [];
 let currentWordIndex = 0;
+
+const fetchWords = async () => {
+    try {
+        let response = await fetch('/scramble1/words');
+        if (!response.ok) {
+            throw new Error('Failed to fetch words.');
+        }
+        words = await response.json();
+        console.log('Fetched words:', words); // Debug: Tampilkan data yang diterima di console
+        initGame(); // Memanggil initGame() setelah data diambil
+    } catch (error) {
+        console.error('Error fetching words:', error);
+        // Tampilkan pesan kesalahan atau lakukan penanganan sesuai kebutuhan
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await fetchWords();
+});
 
 const initTimer = maxTime => {
     clearInterval(timer);
@@ -36,6 +56,7 @@ const initTimer = maxTime => {
 const start = () => {
     contentBox.style.display = "block";
     startArea.style.display = "none";
+    currentWordIndex = 0; // Setel ulang index ke 0
     initGame(); 
 }
 
@@ -59,7 +80,7 @@ const winGame = () => {
     startArea.style.display = "block";
     modal.style.display = "block";
     modalContent.classList.add("modal-correct");
-    modalText.innerHTML = `<br><center>Congrats You WIN THE GAME !!!!!!<br>Your Score: ${score}</center>`;
+    modalText.innerHTML = `<br><center>Congratulations you have answered all the questions <br>Your Score: ${score}</center>`;
     
     // Hilangkan tombol silang dari modal
     span.style.display = "none";
@@ -77,6 +98,11 @@ const winGame = () => {
 }
 
 const initGame = () => {
+        if (words.length === 0) {
+        console.error('No words available to start the game.');
+        return;
+    }
+
     if (currentWordIndex >= words.length) {
         // Semua kata telah ditampilkan, panggil winGame
         winGame();

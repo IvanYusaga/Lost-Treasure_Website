@@ -67,6 +67,7 @@ Route::get('/chooseLevel3', [ChooseLevel3Controller::class, 'index']);
 // Gameplay
 // Scramble Level
 Route::get('/scramble1', [Scramble1Controller::class, 'index']);
+Route::get('/scramble1/words', [Scramble1Controller::class, 'getWords']);
 Route::get('/scramble2', [Scramble2Controller::class, 'index']);
 Route::get('/scramble3', [Scramble3Controller::class, 'index']);
 
