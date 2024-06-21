@@ -1,0 +1,105 @@
+body {
+    background-image: url('/image/login.png'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    box-sizing: border-box; /* Ensures box-sizing is consistent */
+}
+
+a {
+    color: inherit; /* Use the same text color as parent */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login-box {
+    background-color: #EABC86;
+    padding: 90px;
+    border-radius: 10px;
+    width: 290px;
+    position: relative;
+    box-sizing: content-box;
+    margin: auto; /* Untuk menempatkan kotak login di tengah */
+}
+
+.login-box .login {
+    position: absolute;
+    bottom: 30px; /* Distance from bottom */
+    right: 120px; /* Position to the right */
+    color: black; /* Text color */
+}
+
+.login-box .register {
+    position: absolute;
+    bottom: 30px; /* Distance from bottom */
+    right: 120px; /* Position to the right */
+    color: black; /* Text color */
+}
+
+.login-link {
+    color: black; /* Link color */
+    text-decoration: none;
+}
+
+.form-input {
+    margin-bottom: 20px; /* Space between input fields */
+}
+
+.login-box h1 {
+    margin-bottom: 30px;
+    color: black;
+}
+
+.form-input input {
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside the input */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.form-input button {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding inside the button */
+    background-color: #72410a; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.choose-input button{
+        width: 100%; /* Full width */
+        padding: 15px; /* Padding inside the button */
+        background-color: #72410a; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Pointer cursor on hover */
+}
+
+.is-invalid {
+    border-color: #dc3545; /* Red border for invalid input */
+}
+
+.invalid-feedback {
+    color: #dc3545; /* Red text for error message */
+    font-size: 0.875em; /* Font size for error message */
+    margin-top: 0.25em; /* Space between input and error message */
+}
+
+
+

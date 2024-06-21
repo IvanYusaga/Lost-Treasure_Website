@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.judul-text {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
+.paragraf-text {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    text-align: justify;
+    max-width: 80%;
+}
+
+.button-back a {
+    position: absolute;
+    z-index: 4;
+    margin-left: 3vw;
+    margin-top: 80vh;
+}
+
+.button-back img {
+width: 7vw;
+height: 15vh;
+}

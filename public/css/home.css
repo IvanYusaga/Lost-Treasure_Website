@@ -1,0 +1,28 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/image/home.png');
+    background-size: cover; /* This will make the background image cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.start button{
+    width: 200px; 
+    height: 100px;
+    background-color: rgb(206, 134, 63);
+    border-radius: 50px;
+    border: solid rgba(65,79,84,255);
+    cursor: pointer; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgba(65,79,84,255);
+    box-shadow: 0px 10px 0px #414F54; /* Menambahkan bayangan untuk efek timbul */
+    transition: all 0.1s; /* Menambahkan transisi untuk animasi */
+}
+
+.start button:active {
+    transform: translateY(5px); /* Efek menekan tombol */
+}
